@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Survey Form</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type = "text/javascript"
- src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" >
-        </script>
-    </head>
-    <body>
-        <main id="main">
-            <div class="title">
-                <h1 id="title">Survey Form</h1>
-            </div>
-            <div class="description">
-                <p id="description">We would like to gather some information about you.</p>
-            </div>
-            <form id ="survey-form">
-                <div class="form-field">
-                    <label id="name-label" for="name">*Name:</label>
-                    <input id="name" type="text" placeholder="John Smith" required>
-                </div>
-                <div class="form-field">
-                    <label id="email-label" for="email">*Email:</label>
-                    <input id="email" type="email" placeholder="name@email.com" required>
-                </div>
-                <div class="form-field">
-                    <label id="number-label" for="number">Age:</label>
-                    <input id="number" type="number" min="0" max="150" placeholder="20">
-                </div>
-                <div class="form-field">
-                    <label id="dropdown-label" for="dropdown">Your Role:</label>
-                    <select id="dropdown">
-                        <option value="ninja-cat">Ninja Cat</option>
-                        <option value="kenny">Kenny</option>
-                        <option value="rick">Rick</option>
-                        <option value="morty">Morty</option>
-                        <option value="regular-person">Regular Person</option>
-                    </select>
-                </div>
-                <div class="form-field">
-                    <div id="awesome-label-container">
-                        <label id="radio-label" for="awesome-options">How awesome are you?</label>
-                    </div>
-                    <div id="awesome-options">
-                        <input id="not-awesome" name="awesome" type="radio" value="not-really">
-                        <label for="not-awesome">Not really awesome</label>
-                        <input id ="awesome" name="awesome" type="radio" value="awesome">
-                        <label for="awesome">Awesome enough</label>
-                        <input id="very-awesome" name="awesome" type="radio" value="very awesome">
-                        <label for="very-awesome">I'm am the most awesome one</label>
-                    </div>
-                </div>
-                <div class="form-field">
-                    <p id="checkbox-question">What are your top notch skills?</p>
-                    <div id="checkbox-options">
-                        <input id="swords" name="skills" value="swords" type="checkbox">
-                        <label id="swords-label" for="swords">Swords</label>
-                        <input id="magic" name="skills" value="magic" type="checkbox">
-                        <label id="magic-label" for="magic">Magic</label>
-                        <input id="archery" name="skills" value="archery" type="checkbox">
-                        <label id="archery-label" for="archery">Archery</label>
-                    </div>
-                </div>
-                <div class="form-field">
-                    <label id="comment-label" for="comment">Additional comments:</label>
-                    <textarea id="comment"  rows="5" cols="20" placeholder="Your comment here"></textarea>
-                </div>
-                <div class="form-field">
-                    <input id="submit" type="submit">
-                </div>
-        </main>
-    </body>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</head>
+
+<body>
+    <main id="main">
+        <div class="title">
+            <h1 id="title">Survey Form</h1>
+        </div>
+        <div class="description">
+            <p id="description">We would like to gather some information about you.</p>
+        </div>
+        <form id="survey-form">
+            <label id="name-label" for="name">*Name:</label>
+            <input id="name" type="text" placeholder="John Smith" required>
+            <label id="email-label" for="email">*Email:</label>
+            <input id="email" type="email" placeholder="name@email.com" required>
+
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" min="0" max="150" placeholder="20">
+            <label id="dropdown-label" for="dropdown">Your Role:</label>
+            <select id="dropdown">
+                <option value="ninja-cat">Ninja Cat</option>
+                <option value="kenny">Kenny</option>
+                <option value="rick">Rick</option>
+                <option value="morty">Morty</option>
+                <option value="regular-person">Regular Person</option>
+            </select>
+            <label id="radio-label" for="awesome-options">How awesome are you?</label>
+            <input id="not-awesome" name="awesome" type="radio" value="not-really">
+            <label for="not-awesome">Not really awesome</label>
+            <input id="awesome" name="awesome" type="radio" value="awesome">
+            <label for="awesome">Awesome enough</label>
+            <input id="very-awesome" name="awesome" type="radio" value="very awesome">
+            <label for="very-awesome">I'm am the most awesome one</label>
+
+
+            <p id="checkbox-question">What are your top notch skills?</p>
+
+            <input id="swords" name="skills" value="swords" type="checkbox">
+            <label id="swords-label" for="swords">Swords</label>
+            <input id="magic" name="skills" value="magic" type="checkbox">
+            <label id="magic-label" for="magic">Magic</label>
+            <input id="archery" name="skills" value="archery" type="checkbox">
+            <label id="archery-label" for="archery">Archery</label>
+
+            <label id="comment-label" for="comment">Additional comments:</label>
+            <textarea id="comment" rows="5" cols="20" placeholder="Your comment here"></textarea>
+
+            <input id="submit" type="submit">
+
+        </form>
+    </main>
+</body>
+
 </html>
