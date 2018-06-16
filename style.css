@@ -1,0 +1,13 @@
+:root {
+  --main-color: #ffa82d;
+  --scnd-color: #ffdc2d;
+  --text-color: #551575;
+}
+body {
+  background-color: var(--main-color);
+}
+
+#main {
+  background-color: var(--scnd-color);
+  color: var(--text-color);
+}
