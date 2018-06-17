@@ -3,23 +3,23 @@
   --scnd-color: #ffdc2d;
   --text-color: #551575;
 }
+
 body {
   background-color: var(--main-color);
 }
 
 #main {
   background-color: var(--scnd-color);
-  max-width:70%;
+  max-width: 70%;
   margin: auto;
   padding: 15px;
   color: var(--text-color);
-
 }
 
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 10px;
 }
 
 label {
@@ -28,9 +28,26 @@ label {
 
 #radio-label {
   grid-area: 5/1/8/2;
-  border-style: dashed;
+  /* border-style: dashed; */
+  align-self: center;
 }
 
-#title, #description {
+#checkbox-question {
+  grid-area: 8/1/11/2;
+  align-self: center;
+  /* border-style: dashed; */
+}
+
+#comment-label {
+  align-self: center;
+}
+
+#title,
+#description {
   text-align: center;
+}
+
+#submit {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
