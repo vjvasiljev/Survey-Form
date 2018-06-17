@@ -19,12 +19,18 @@ body {
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
 }
 
 label {
   text-align: end
 }
 
-h1 {
+#radio-label {
+  grid-area: 5/1/8/2;
+  border-style: dashed;
+}
+
+#title, #description {
   text-align: center;
 }
